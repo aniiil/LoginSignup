@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.homebox{
+    background-image: url(../assets/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.move{
+    margin-top: 10px;
+    animation: rightslide 5.5s infinite ease-in-out;
+position: relative;
+}
+
+
+@keyframes rightslide{
+    0%{
+        transform: translate3d(-190%,0,0);
+    
+    }
+    100%{
+        transform: translate3d(210%,0,0);
+    }
+}
